@@ -109,12 +109,18 @@
 		</dependency>
 
 		<!-- oracle (can not download from Maven repository)  -->
+		<!--<dependency>-->
+			<!--<groupId>com.oracle</groupId>-->
+			<!--<artifactId>ojdbc14</artifactId>-->
+			<!--<version>10.2.0.1.0</version>-->
+		<!--</dependency>-->
+
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc14</artifactId>
-			<version>10.2.0.1.0</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.18</version>
 		</dependency>
-		
+
 		<!--  druid -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -222,9 +228,9 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<version>3.0</version>
-				</configuration>
+				<!--<configuration>-->
+					<!--<version>3.0</version>-->
+				<!--</configuration>-->
 			</plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
